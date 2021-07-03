@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="F:/KMH/react_kong/workspace/vanilla-demo/assets/css/bootstrap.min.css">
+    <title> VOTE - testPage </title>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <p class="fs-4" id="voteTitle"></p>
+        <div>
+            <input class="answerYes" name="vote" type="radio" value="4"><label class="form-check-label" for="vote" id="answerYes"></label>
+        </div>
+        <div>
+            <input class="answerNo" name="vote" type="radio" value="3"><label class="form-check-label" for="vote" id="answerNo"></label>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-dark btn-sm" onClick="addVote()">제출</button>
+            <button type="button" class="btn btn-outline-warning btn-sm" onClick="reset()">초기화</button>
+        </div>
+    </div>
+    
+    <hr>
+    <div class="table-responsive">
+        <p class="fs-4 voteResult">투표결과</h2>
+        <table class="table table-striped">
+            <tbody id="tableData"></tbody>
+        </table>
+    </div>
+    <script src="F:/KMH/react_kong/workspace/vanilla-demo/assets/css/bootstrap.min.js"></script>
+    <script src="F:/KMH/react_kong/workspace/vanilla-demo/containers/vote/vote.js"></script>
+</body>
+</html>
